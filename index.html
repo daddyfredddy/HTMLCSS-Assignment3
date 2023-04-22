@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: antiquewhite;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li {
+        display: inline-block;
+        padding: 10px 20px;
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+      }
+      ul li a:hover {
+        color: red;
+        font-size: large;
+        transition: 0.4s;
+      }
+      h2 {
+        text-align: center;
+        margin: 20px 0px;
+      }
+      .img {
+        width: 300px;
+        height: 200px;
+      }
+      table {
+        width: 100%;
+        padding: 20px 20px;
+        border: 5px dashed greenyellow;
+        border-radius: 10px;
+        border-collapse: collapse;
+      }
+      table th {
+        padding: 10px;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid;
+        text-align: center;
+      }
+      th {
+        background-color: chartreuse;
+      }
+      tr:nth-child(odd) {
+        background-color: aqua;
+      }
+      tr:hover {
+        background-color: yellow;
+        cursor: pointer;
+      }
+      article h3 {
+        text-align: center;
+      }
+      #content {
+        margin-top: 30px;
+        text-align: center;
+      }
+      article ol li {
+        text-align: center;
+      }
+      article h4 {
+        text-align: center;
+      }
+      article {
+        margin-bottom: 20px;
+      }
+      #mount {
+        margin-top: 600px;
+      }
+    </style>
+
+    <title>HTMLCSS assignment3t</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#content">Table of contents</a></li>
+        <li><a href="#tab">Top 5 Highest Mountains in the World</a></li>
+      </ul>
+    </nav>
+    <section>
+      <table id="tab">
+        <h2>Top 5 Highest Mountains in the World</h2>
+        <caption>
+          Data Source: Wikipedia
+        </caption>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Height (in meters)</th>
+          <th>Location</th>
+          <th>First Ascent</th>
+          <th>Mountain Image</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Mount Everest</td>
+          <td>8848</td>
+          <td>Nepal/China</td>
+          <td>1953</td>
+          <td>
+            <img
+              src="images/mt.everest.jfif"
+              alt="Mt.Everest image"
+              class="img"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>K2</td>
+          <td>8611</td>
+          <td>Pakistan/China</td>
+          <td>1954</td>
+          <td><img src="images/mt.k2.jpg" alt="Mt.K2 image" class="img" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Kangchengjunga</td>
+          <td>8586</td>
+          <td>Nepal/India</td>
+          <td>1955</td>
+          <td>
+            <img
+              src="images/Mt.Kangchengjunga.jpg"
+              alt="Mt.Kangchengjunga image"
+              class="img"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Lhotse</td>
+          <td>8516</td>
+          <td>Nepal/China</td>
+          <td>1956</td>
+          <td>
+            <img src="images/mt.lhotse.jpg" alt="It.lhotse image" class="img" />
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Makalu</td>
+          <td>8485</td>
+          <td>Nepal/China</td>
+          <td>1955</td>
+          <td>
+            <img src="images/mt.makalu.jpg" alt="Mt.Makalu image" class="img" />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <article>
+      <div id="content">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li>
+            <a href="#mount"><h4>Mountains</h4></a>
+          </li>
+          <li>
+            <a href="#height"><h4>height</h4></a>
+          </li>
+          <li>
+            <a href="#loc"><h4>Location</h4></a>
+          </li>
+        </ol>
+      </div>
+      <h2 id="mount">Mountains</h2>
+      <ol>
+        <li>Everest</li>
+        <li>K2</li>
+        <li>Kangchengjunga</li>
+        <li>Lhotse</li>
+        <li>Makalu</li>
+      </ol>
+      <h2 id="height">Height(in meters)</h2>
+      <ol>
+        <li>8848</li>
+        <li>8611</li>
+        <li>8586</li>
+        <li>8516</li>
+        <li>8485</li>
+      </ol>
+      <h2 id="loc">Location</h2>
+      <ol>
+        <li>Nepal/China</li>
+        <li>Pakistan/China</li>
+        <li>Nepal/India</li>
+        <li>Nepal/China</li>
+        <li>Nepal/China</li>
+      </ol>
+      <h4><a href="#">Go back Home</a></h4>
+    </article>
+  </body>
+</html>
